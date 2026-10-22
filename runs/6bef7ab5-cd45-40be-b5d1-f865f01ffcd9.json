@@ -1,0 +1,104 @@
+{
+  "input_path": "samples/dim_room.jpg",
+  "output_path": "outputs/dim_room_gemini.jpg",
+  "report_path": "outputs/dim_room_gemini_report.md",
+  "scene": {
+    "mean_brightness": 94.05,
+    "std_dev": 30.32,
+    "percent_dark": 12.39,
+    "percent_clipped_bright": 0.0,
+    "noise_estimate": 2060.949143090471,
+    "is_underexposed": true,
+    "is_noisy": true,
+    "is_flat": false,
+    "summary": "mildly underexposed image, with visible sensor noise. mean brightness 94.05, contrast std 30.32, noise estimate 2060.9, 12.39% dark pixels, 0.0% blown highlights."
+  },
+  "attempts": [
+    {
+      "round_number": 1,
+      "plan": {
+        "gamma": 0.65,
+        "clahe_clip": 2.5,
+        "clahe_tile": 8,
+        "denoise_method": "nlmeans",
+        "denoise_strength": 15.0,
+        "sharpen_amount": 0.5,
+        "reasoning": [
+          "Moderate low-light with high noise requires strong non-local means denoising combined with gamma correction and CLAHE to lift shadows."
+        ],
+        "source": "gemini+rag",
+        "knowledge_used": []
+      },
+      "quality": {
+        "scores": {
+          "brightness": 100.0,
+          "contrast": 92.9,
+          "noise": 63.1,
+          "clipping": 98.9
+        },
+        "overall": 88.8,
+        "passed": true,
+        "feedback": "noise still visible"
+      },
+      "denoise_method_used": "denoise_nlmeans",
+      "denoise_fallback_triggered": false
+    }
+  ],
+  "used_safety_preset": false,
+  "final_overall_score": 88.8,
+  "run_id": "6bef7ab5-cd45-40be-b5d1-f865f01ffcd9",
+  "timestamp": "2026-10-22T10:00:03.936251+00:00",
+  "latency_ms": 2560.299,
+  "tool_calls": [
+    {
+      "tool": "brightness_stats",
+      "ok": true,
+      "duration_ms": 36.888499998894986,
+      "error": ""
+    },
+    {
+      "tool": "estimate_noise",
+      "ok": true,
+      "duration_ms": 32.48654199705925,
+      "error": ""
+    },
+    {
+      "tool": "apply_gamma",
+      "ok": true,
+      "duration_ms": 63.11266700504348,
+      "error": ""
+    },
+    {
+      "tool": "apply_clahe",
+      "ok": true,
+      "duration_ms": 194.47508399753133,
+      "error": ""
+    },
+    {
+      "tool": "denoise_nlmeans",
+      "ok": true,
+      "duration_ms": 447.5936660019215,
+      "error": ""
+    },
+    {
+      "tool": "unsharp_mask",
+      "ok": true,
+      "duration_ms": 53.66012500599027,
+      "error": ""
+    },
+    {
+      "tool": "evaluate_quality",
+      "ok": true,
+      "duration_ms": 57.95270800444996,
+      "error": ""
+    }
+  ],
+  "error_count": 0,
+  "retry_count": 0,
+  "input_tokens": 242,
+  "output_tokens": 110,
+  "llm_call_attempts": 1,
+  "llm_failed_calls": 0,
+  "estimated_cost_usd": null,
+  "cost_status": "gemini_token_usage_recorded_but_pricing_rates_not_configured"
+}

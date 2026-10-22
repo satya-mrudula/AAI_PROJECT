@@ -1,0 +1,104 @@
+{
+  "input_path": "/var/folders/vm/l46jyffd31v5fd02wm8_l8800000gn/T/tmp6vkpfn1y/input.png",
+  "output_path": "/var/folders/vm/l46jyffd31v5fd02wm8_l8800000gn/T/tmp6vkpfn1y/enhanced.png",
+  "report_path": "/var/folders/vm/l46jyffd31v5fd02wm8_l8800000gn/T/tmp6vkpfn1y/report.md",
+  "scene": {
+    "mean_brightness": 40.36,
+    "std_dev": 43.81,
+    "percent_dark": 85.17,
+    "percent_clipped_bright": 1.78,
+    "noise_estimate": 81.43055920740619,
+    "is_underexposed": true,
+    "is_noisy": false,
+    "is_flat": false,
+    "summary": "clearly underexposed image. mean brightness 40.36, contrast std 43.81, noise estimate 81.4, 85.17% dark pixels, 1.78% blown highlights."
+  },
+  "attempts": [
+    {
+      "round_number": 1,
+      "plan": {
+        "gamma": 0.5,
+        "clahe_clip": 3.0,
+        "clahe_tile": 8,
+        "denoise_method": "nlmeans",
+        "denoise_strength": 18.0,
+        "sharpen_amount": 0.5,
+        "reasoning": [
+          "The image is very dark and noisy, requiring strong gamma correction, aggressive denoising, and moderate local contrast enhancement."
+        ],
+        "source": "gemini+rag",
+        "knowledge_used": []
+      },
+      "quality": {
+        "scores": {
+          "brightness": 100.0,
+          "contrast": 100.0,
+          "noise": 0.0,
+          "clipping": 85.6
+        },
+        "overall": 72.8,
+        "passed": true,
+        "feedback": "noise still visible"
+      },
+      "denoise_method_used": "denoise_nlmeans",
+      "denoise_fallback_triggered": false
+    }
+  ],
+  "used_safety_preset": false,
+  "final_overall_score": 72.8,
+  "run_id": "24886e9a-74a7-412d-8212-fb65294b4fdf",
+  "timestamp": "2026-10-22T10:02:51.693780+00:00",
+  "latency_ms": 2125.861,
+  "tool_calls": [
+    {
+      "tool": "brightness_stats",
+      "ok": true,
+      "duration_ms": 42.21887500170851,
+      "error": ""
+    },
+    {
+      "tool": "estimate_noise",
+      "ok": true,
+      "duration_ms": 40.28058299445547,
+      "error": ""
+    },
+    {
+      "tool": "apply_gamma",
+      "ok": true,
+      "duration_ms": 80.89462500356603,
+      "error": ""
+    },
+    {
+      "tool": "apply_clahe",
+      "ok": true,
+      "duration_ms": 213.12975000182632,
+      "error": ""
+    },
+    {
+      "tool": "denoise_nlmeans",
+      "ok": true,
+      "duration_ms": 393.81979199970374,
+      "error": ""
+    },
+    {
+      "tool": "unsharp_mask",
+      "ok": true,
+      "duration_ms": 85.2232500037644,
+      "error": ""
+    },
+    {
+      "tool": "evaluate_quality",
+      "ok": true,
+      "duration_ms": 80.98566599801416,
+      "error": ""
+    }
+  ],
+  "error_count": 0,
+  "retry_count": 0,
+  "input_tokens": 243,
+  "output_tokens": 106,
+  "llm_call_attempts": 1,
+  "llm_failed_calls": 0,
+  "estimated_cost_usd": null,
+  "cost_status": "gemini_token_usage_recorded_but_pricing_rates_not_configured"
+}

@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: lowlight-mcp-gemini
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.5-flash-lite
+      - key: LOWLIGHT_USE_MCP
+        value: "1"
+      - key: LOWLIGHT_RUNS_DIR
+        value: runs

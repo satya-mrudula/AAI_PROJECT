@@ -1,0 +1,332 @@
+[
+  {
+    "test_id": "IMG0101",
+    "category": "normal",
+    "source": "samples/cars.png",
+    "transform": "original",
+    "expected": "enhanced_image_created",
+    "max_reflections": 0
+  },
+  {
+    "test_id": "IMG0102",
+    "category": "synthetic_degradation",
+    "source": "samples/cars.png",
+    "transform": "darken_0.35",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMG0103",
+    "category": "synthetic_degradation",
+    "source": "samples/cars.png",
+    "transform": "darken_0.50",
+    "expected": "enhanced_image_created",
+    "max_reflections": 0
+  },
+  {
+    "test_id": "IMG0104",
+    "category": "synthetic_degradation",
+    "source": "samples/cars.png",
+    "transform": "darken_0.65",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMG0105",
+    "category": "synthetic_degradation",
+    "source": "samples/cars.png",
+    "transform": "noise_8",
+    "expected": "enhanced_image_created",
+    "max_reflections": 0
+  },
+  {
+    "test_id": "IMG0106",
+    "category": "synthetic_degradation",
+    "source": "samples/cars.png",
+    "transform": "noise_15",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMG0107",
+    "category": "synthetic_degradation",
+    "source": "samples/cars.png",
+    "transform": "noise_25",
+    "expected": "enhanced_image_created",
+    "max_reflections": 0
+  },
+  {
+    "test_id": "IMG0108",
+    "category": "synthetic_degradation",
+    "source": "samples/cars.png",
+    "transform": "low_contrast",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMG0201",
+    "category": "normal",
+    "source": "samples/dark_alley.jpg",
+    "transform": "original",
+    "expected": "enhanced_image_created",
+    "max_reflections": 0
+  },
+  {
+    "test_id": "IMG0202",
+    "category": "synthetic_degradation",
+    "source": "samples/dark_alley.jpg",
+    "transform": "darken_0.35",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMG0203",
+    "category": "synthetic_degradation",
+    "source": "samples/dark_alley.jpg",
+    "transform": "darken_0.50",
+    "expected": "enhanced_image_created",
+    "max_reflections": 0
+  },
+  {
+    "test_id": "IMG0204",
+    "category": "synthetic_degradation",
+    "source": "samples/dark_alley.jpg",
+    "transform": "darken_0.65",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMG0205",
+    "category": "synthetic_degradation",
+    "source": "samples/dark_alley.jpg",
+    "transform": "noise_8",
+    "expected": "enhanced_image_created",
+    "max_reflections": 0
+  },
+  {
+    "test_id": "IMG0206",
+    "category": "synthetic_degradation",
+    "source": "samples/dark_alley.jpg",
+    "transform": "noise_15",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMG0207",
+    "category": "synthetic_degradation",
+    "source": "samples/dark_alley.jpg",
+    "transform": "noise_25",
+    "expected": "enhanced_image_created",
+    "max_reflections": 0
+  },
+  {
+    "test_id": "IMG0208",
+    "category": "synthetic_degradation",
+    "source": "samples/dark_alley.jpg",
+    "transform": "low_contrast",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMG0301",
+    "category": "normal",
+    "source": "samples/dim_room.jpg",
+    "transform": "original",
+    "expected": "enhanced_image_created",
+    "max_reflections": 0
+  },
+  {
+    "test_id": "IMG0302",
+    "category": "synthetic_degradation",
+    "source": "samples/dim_room.jpg",
+    "transform": "darken_0.35",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMG0303",
+    "category": "synthetic_degradation",
+    "source": "samples/dim_room.jpg",
+    "transform": "darken_0.50",
+    "expected": "enhanced_image_created",
+    "max_reflections": 0
+  },
+  {
+    "test_id": "IMG0304",
+    "category": "synthetic_degradation",
+    "source": "samples/dim_room.jpg",
+    "transform": "darken_0.65",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMG0305",
+    "category": "synthetic_degradation",
+    "source": "samples/dim_room.jpg",
+    "transform": "noise_8",
+    "expected": "enhanced_image_created",
+    "max_reflections": 0
+  },
+  {
+    "test_id": "IMG0306",
+    "category": "synthetic_degradation",
+    "source": "samples/dim_room.jpg",
+    "transform": "noise_15",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMG0307",
+    "category": "synthetic_degradation",
+    "source": "samples/dim_room.jpg",
+    "transform": "noise_25",
+    "expected": "enhanced_image_created",
+    "max_reflections": 0
+  },
+  {
+    "test_id": "IMG0308",
+    "category": "synthetic_degradation",
+    "source": "samples/dim_room.jpg",
+    "transform": "low_contrast",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMGX0101",
+    "category": "stress_variant",
+    "source": "samples/cars.png",
+    "transform": "blur",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMGX0102",
+    "category": "stress_variant",
+    "source": "samples/cars.png",
+    "transform": "resize_small",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMGX0103",
+    "category": "stress_variant",
+    "source": "samples/cars.png",
+    "transform": "gamma_bright",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMGX0104",
+    "category": "stress_variant",
+    "source": "samples/cars.png",
+    "transform": "mixed_noise_dark",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMGX0201",
+    "category": "stress_variant",
+    "source": "samples/dark_alley.jpg",
+    "transform": "blur",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMGX0202",
+    "category": "stress_variant",
+    "source": "samples/dark_alley.jpg",
+    "transform": "resize_small",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMGX0203",
+    "category": "stress_variant",
+    "source": "samples/dark_alley.jpg",
+    "transform": "gamma_bright",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMGX0204",
+    "category": "stress_variant",
+    "source": "samples/dark_alley.jpg",
+    "transform": "mixed_noise_dark",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMGX0301",
+    "category": "stress_variant",
+    "source": "samples/dim_room.jpg",
+    "transform": "blur",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMGX0302",
+    "category": "stress_variant",
+    "source": "samples/dim_room.jpg",
+    "transform": "resize_small",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMGX0303",
+    "category": "stress_variant",
+    "source": "samples/dim_room.jpg",
+    "transform": "gamma_bright",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "IMGX0304",
+    "category": "stress_variant",
+    "source": "samples/dim_room.jpg",
+    "transform": "mixed_noise_dark",
+    "expected": "enhanced_image_created",
+    "max_reflections": 1
+  },
+  {
+    "test_id": "ERR01",
+    "category": "input_failure",
+    "input_kind": "missing_file",
+    "expected": "controlled_input_error",
+    "max_reflections": 0
+  },
+  {
+    "test_id": "ERR02",
+    "category": "input_failure",
+    "input_kind": "corrupt_image",
+    "expected": "controlled_input_error",
+    "max_reflections": 0
+  },
+  {
+    "test_id": "ERR03",
+    "category": "input_failure",
+    "input_kind": "corrupt_image",
+    "expected": "controlled_input_error",
+    "max_reflections": 0
+  },
+  {
+    "test_id": "ERR04",
+    "category": "input_failure",
+    "input_kind": "missing_file",
+    "expected": "controlled_input_error",
+    "max_reflections": 0
+  },
+  {
+    "test_id": "ERR05",
+    "category": "input_failure",
+    "input_kind": "corrupt_image",
+    "expected": "controlled_input_error",
+    "max_reflections": 0
+  },
+  {
+    "test_id": "ERR06",
+    "category": "input_failure",
+    "input_kind": "missing_file",
+    "expected": "controlled_input_error",
+    "max_reflections": 0
+  }
+]
